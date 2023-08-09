@@ -1,18 +1,24 @@
 function canPay(changeArray, totalDue) {
 
-    let sum  = 0;
-    for ( let i = 0; i < moneyInHand.length; i++){
-        sum = sum + moneyInHand[i];
-    }
-    if ( sum >= chipsPrice){
-        return true;
-    }else
-    {
-        return false;
+    if ( changeArray.length == 0 ){
+        return "Please input 3 positive numbers as array element.";
+    } 
+    else{
+        let sum  = 0;
+        for ( let i = 0; i < changeArray.length; i++){
+            sum = sum + changeArray[i];
+        }
+        if ( sum >= totalDue){
+            return true;
+        }else
+        {
+            return false;
+        }
     }
 }
 
-const moneyInHand = [1, 5, 5];
-const chipsPrice = 10;
+const changeArray = [];
 
-console.log(canPay(moneyInHand, chipsPrice))
+const totalDue = 10;
+
+console.log(canPay(changeArray, totalDue))
