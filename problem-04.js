@@ -1,7 +1,14 @@
 
 function findAddress(address){
-    const output = Object.keys(inputObj);
-    return output;
+
+    const keysArray = Object.keys(address); 
+    const valuesArray = Object.values(address);
+    
+
+    for (i = 0; i < keysArray.length; i++){
+        console.log(valuesArray[i])
+        
+    } 
 
 }
 const inputObj = {
@@ -9,4 +16,4 @@ const inputObj = {
     house: '15A',
     society: 'Earth Perfect'
 }
-console.log(findAddress(inputObj));
+findAddress(inputObj);
