@@ -4,17 +4,12 @@ function sortMaker(arr) {
         return 'equal'
     }
     else if ( arr[0] > 0 && arr[1] > 0 ) {
-        const maxElement = arr[0];
+        
         const reverseArray = [];
-        for (let i = 0; i < arr.length; i++){
-            const index =i;
-            const element = arr[index];
-            if( element > maxElement){
-                maxElement = element;
-                reverseArray.push(element); 
-            }
-            return reverseArray;
-        }
+
+        reverseArray.push(Math.max(...arr))
+        reverseArray.push(Math.min(...arr))
+
         return reverseArray;
         
     }
@@ -24,7 +19,7 @@ function sortMaker(arr) {
     
 }
 
-const arr = [2, 3];
+const arr = [5, 6];
 
 console.log(sortMaker(arr));
 
