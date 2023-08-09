@@ -1,19 +1,16 @@
 
 function findAddress(address){
 
-    const keysArray = Object.keys(address); 
-    const valuesArray = Object.values(address);
-    
+    const street = address.street
+    const house = address.house
+    const society = address.society
 
-    for (i = 0; i < keysArray.length; i++){
-        console.log(valuesArray[i])
-        
-    } 
-
+    return street+','+house+','+society
+  
 }
 const inputObj = {
     street: 10,
     house: '15A',
     society: 'Earth Perfect'
 }
-findAddress(inputObj);
+console.log(findAddress(inputObj));
