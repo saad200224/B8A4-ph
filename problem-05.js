@@ -17,7 +17,7 @@ function canPay(changeArray, totalDue) {
     }
 }
 
-const changeArray = [];
+const changeArray = [1, 5, 5];
 
 const totalDue = 10;
 

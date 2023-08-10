@@ -5,9 +5,9 @@ function findAddress(address){
         return "Please provide valid object"
     } else{
 
-    const street = address.street
-    const house = address.house
-    const society = address.society
+    const street = address.street || '__'
+    const house = address.house || '__'
+    const society = address.society || '__'
 
     return street+','+house+','+society
     }
