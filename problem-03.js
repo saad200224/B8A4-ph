@@ -25,6 +25,6 @@ function sortMaker(arr) {
     }
 }
 
-const arr = [2,4];
+const arr = [1,2];
 
 console.log(sortMaker(arr));

@@ -1,4 +1,3 @@
-
 function findAddress(address){
 
     if(typeof address !== "object"){

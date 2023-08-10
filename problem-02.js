@@ -8,7 +8,7 @@ function matchFinder(string1, string2) {
     }
 }
 
-const string1 = 'John Doe';
-const string2 = 'ohn';
+const string1 = 'JavaScript';
+const string2 = 'Code';
 
 console.log(matchFinder(string1, string2));
